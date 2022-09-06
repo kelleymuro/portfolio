@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherhit;
+}
+
+html {	
+	box-sizing: border-box;
+	font-size: 62.5% /* 1rem = 10px, 10px / 16px (= browser default) = 62.5% */ 
+}
+
+/* Optional: This varies based on project design */
+body {
+	font-family: 'Inconsolata', 'sans-serif';
+	font-weight: 400;
+	line-height: 1.6;
+}
+
+.main-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.title-container {
+    margin: 25px 0;
+}
+
+.bio {
+    margin: 25px 0;
+}
+
+.content-container h3 {
+    font-size: 20px;
+}
+
+.content-container p {
+    font-size: 16px;
+}
+
+.work-title {
+    margin-top: 25px;
+}
+
+.link-container {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}
+
+.link-container a {
+    display: inline-block;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+.link-container a:hover {
+    text-decoration: underline;
+}
+
+.after\:content-\[\'_\2197\'\]:after {
+    content: " ↗"
+}
+
+small {
+    color: #d4d4d4;
+}
+
+.work-link-list li {
+ list-style-type: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .main-container {
+        width: 80%;
+    }
+}
